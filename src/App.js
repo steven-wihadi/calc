@@ -34,11 +34,14 @@ function App() {
 
     if (operator === '' && tempValue.length === 0) {
       setErrorMessage('');
+      setResult(0);
     } else if (operator === '' && tempValue.length !== 0) {
       setErrorMessage('Please choose the operator.');
+      setResult(0);
     } else {
       if (flag <= 1) {
         setErrorMessage('Please checked more than one value.');
+        setResult(0);
       } else {
         setErrorMessage('');
         let formula = '';
