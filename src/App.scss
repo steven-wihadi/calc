@@ -1,0 +1,54 @@
+.App {
+
+  .calculator-container {
+    width: 600px;
+    height: 400px;
+    margin: 60px;
+    display: block;
+
+    .user-input-wrapper {
+      margin: 20px 20px 20px 0px;
+
+      input[type=number] {
+        margin-right: 12px;
+      }
+
+      input[type=checkbox] {
+        background-color: green;
+      }
+    }
+  }
+
+  .operator-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px 25px 0px;
+    border-bottom: 1px solid black;
+    width: 30%;
+
+    .operator-box {
+      border: 1px solid black;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      span {
+        line-height: 12px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .error-message {
+    color: red;
+    font-size: 12px;
+    padding: 4px 4px 4px 0px;
+  }
+
+  .result-wrapper {
+    margin-top: 12px;
+  }
+}
